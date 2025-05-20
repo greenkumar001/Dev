@@ -97,7 +97,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-sky-blue-400" />
               <span className="text-sm text-sky-blue-300">
-                info@devrathind.com
+                info@devrathindustries.com
               </span>
             </div>
           </div>

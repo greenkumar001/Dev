@@ -820,7 +820,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold">Email</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    info@devrathind.com
+                    info@devrathindustries.com
                   </p>
                 </div>
               </div>

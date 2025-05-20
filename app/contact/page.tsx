@@ -119,15 +119,15 @@ export default function ContactPage() {
                 </p>
                 <div className="mt-2">
                   <p className="font-medium">General Inquiries:</p>
-                  <p className="text-primary">info@devrathind.com</p>
+                  <p className="text-primary">info@devrathindustries.com</p>
                 </div>
                 <div className="mt-2">
                   <p className="font-medium">Sales Department:</p>
-                  <p className="text-primary">sales@devrathind.com</p>
+                  <p className="text-primary">info@devrathindustries.com</p>
                 </div>
                 <div className="mt-2">
                   <p className="font-medium">Support:</p>
-                  <p className="text-primary">support@devrathind.com</p>
+                  <p className="text-primary">info@devrathindsutries.com</p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4 rounded-lg border bg-white p-6 shadow-md dark:bg-gray-800 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
