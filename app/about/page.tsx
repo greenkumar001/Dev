@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -5,15 +6,79 @@ import {
   Building,
   Calendar,
   CheckCircle,
+  ExternalLink,
   FileText,
+  Shield,
   Users,
+  X,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
+const certifications = [
+  {
+    id: 1,
+    name: "ISO 45001:2018",
+    description: "Occupational Health and Safety Management Certification",
+    img: "/images/ISO-2018.png",
+    year: "2025",
+    issuer: "International Organization for Standardization",
+    verified: true,
+  },
+  {
+    id: 2,
+    name: "ISO 14001:2015",
+    description: "Environmental Management System Certification",
+    img: "/images/ISO-14001-2015.png",
+    year: "2025",
+    issuer: "International Organization for Standardization",
+    verified: true,
+  },
+  {
+    id: 3,
+    name: "ISO 9001:2015",
+    description: "Quality Management System Certification",
+    img: "/images/DEVRATH_INDUSTRIES_QMS.png",
+    year: "2025",
+    issuer: "International Organization for Standardization",
+    verified: true,
+  },
+  {
+    id: 4,
+    name: "NQCAB CE",
+    description: "European Conformity Certification",
+    img: "/images/Certificate_18.png",
+    year: "2025",
+    issuer: "NQCAB Certification Board",
+    verified: true,
+  },
+  {
+    id: 5,
+    name: "GMP",
+    description: "Good Manufacturing Practices Certification",
+    img: "/images/Certificate _GMP.png",
+    year: "2025",
+    issuer: "World Health Organization",
+    verified: true,
+  },
+]
+
 
 export default function AboutPage() {
+const [fullscreenCert, setFullscreenCert] = useState(null)
+
+  const openFullscreen = (cert :any) => {
+    setFullscreenCert(cert)
+    document.body.style.overflow = "hidden"
+  }
+
+  const closeFullscreen = () => {
+    setFullscreenCert(null)
+    document.body.style.overflow = "auto"
+  }
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -372,66 +437,143 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Certifications Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Certifications & Awards
-                </h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Recognition of our commitment to quality and excellence
-                </p>
+       {/* Certifications Section */}
+  <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+          <div className="inline-flex items-center justify-center p-2 bg-blue-50 rounded-full dark:bg-blue-900/20 mb-4">
+            <Shield className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+          </div>
+          <div className="space-y-3 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200">
+              Certifications & Awards
+            </h2>
+            <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Our commitment to excellence has been recognized by leading industry organizations. Each certification
+              represents our dedication to quality, security, and customer satisfaction.
+            </p>
+          </div>
+          <div className="flex items-center justify-center mt-4">
+            <Badge
+              variant="outline"
+              className="text-sm bg-white dark:bg-gray-800 border-blue-200 dark:border-blue-800 px-3 py-1"
+            >
+              <CheckCircle className="w-3.5 h-3.5 mr-1.5 text-green-500" />
+              All certifications verified
+            </Badge>
+          </div>
+        </div>
+
+        <div className="mx-auto grid max-w-5xl gap-8 py-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {certifications.map((cert) => (
+            <div
+              key={cert.id}
+              className="group relative flex flex-col items-center space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-200 dark:border-gray-800 dark:bg-gray-900 dark:hover:border-blue-900"
+            >
+              <div className="absolute top-3 right-3">
+                {cert.verified && (
+                  <div className="text-green-500 dark:text-green-400" title="Verified">
+                    <CheckCircle className="w-4 h-4" />
+                  </div>
+                )}
+              </div>
+
+              <div className="relative w-24 h-24 overflow-hidden rounded-lg bg-gray-50 dark:bg-gray-800 p-2 flex items-center justify-center">
+                <img
+                  src={cert.img || "/placeholder.svg"}
+                  alt={cert.name}
+                  className="cursor-pointer object-contain transition-transform duration-500 group-hover:scale-110"
+                  onClick={() => openFullscreen(cert)}
+                />
+                <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/10 transition-colors duration-300 rounded-lg"></div>
+              </div>
+
+              <div className="text-center space-y-2">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                  {cert.name}
+                </h3>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">{cert.description}</p>
+                <div className="pt-2">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                    onClick={() => openFullscreen(cert)}
+                  >
+                    View Details
+                  </Button>
+                </div>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-white p-6 shadow-md dark:bg-gray-800">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-primary/10">
-                  <Award className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-center">ISO 9001:2015</h3>
-                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Quality Management System Certification
-                </p>
+          ))}
+        </div>
+      </div>
+
+      {/* Fullscreen Modal with Enhanced Details */}
+      {fullscreenCert && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 backdrop-blur-sm"
+          onClick={closeFullscreen}
+        >
+          <div
+            className="relative bg-white dark:bg-gray-900 rounded-xl p-6 max-w-2xl w-full mx-4 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              onClick={closeFullscreen}
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <div className="w-32 h-32 flex-shrink-0 bg-gray-50 dark:bg-gray-800 rounded-lg p-2 flex items-center justify-center">
+                <img
+                  src={fullscreenCert.img || "/placeholder.svg"}
+                  alt={fullscreenCert.name}
+                  className="object-contain"
+                />
               </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-white p-6 shadow-md dark:bg-gray-800">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-primary/10">
-                  <Award className="h-8 w-8 text-primary" />
+
+              <div className="flex-1 space-y-4 text-center md:text-left">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{fullscreenCert.name}</h3>
+                  <p className="text-gray-500 dark:text-gray-400">{fullscreenCert.description}</p>
                 </div>
-                <h3 className="text-xl font-bold text-center">
-                  ISO 14001:2015
-                </h3>
-                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Environmental Management System Certification
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-white p-6 shadow-md dark:bg-gray-800">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-primary/10">
-                  <Award className="h-8 w-8 text-primary" />
+
+                <div className="space-y-2">
+                  <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-8">
+                    <div className="flex items-center">
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400 mr-2">Issued by:</span>
+                      <span className="text-sm text-gray-900 dark:text-white">{fullscreenCert.issuer}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-sm font-medium text-gray-500 dark:text-gray-400 mr-2">Year:</span>
+                      <span className="text-sm text-gray-900 dark:text-white">{fullscreenCert.year}</span>
+                    </div>
+                  </div>
+
+                  {fullscreenCert.verified && (
+                    <div className="flex items-center justify-center md:justify-start mt-2">
+                      <Badge className="bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800">
+                        <CheckCircle className="w-3.5 h-3.5 mr-1.5" />
+                        Verified Certification
+                      </Badge>
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-center">
-                  Best Manufacturer Award
-                </h3>
-                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Maharashtra Industrial Development Association, 2019
+
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
+                  This certification demonstrates our commitment to maintaining the highest standards in our industry.
+                  It is awarded after a rigorous evaluation process and represents our dedication to excellence.
                 </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-white p-6 shadow-md dark:bg-gray-800">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-primary/10">
-                  <Award className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-center">
-                  Innovation Excellence
-                </h3>
-                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  CII Industrial Innovation Awards, 2021
-                </p>
+                
               </div>
             </div>
           </div>
-        </section>
-
+        </div>
+      )}
+    </section>
         {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-sky-blue-500 to-dark-blue-700 text-white">
           <div className="container px-4 md:px-6">
