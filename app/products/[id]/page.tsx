@@ -53,7 +53,7 @@ const getProductData = (id: string) => {
       description: "GI powder-coated double leaf clean room door.",
       longDescription:
         "This double leaf clean room door is designed to provide durability and an airtight seal for clean environments. It features a GI powder-coated finish for corrosion resistance.",
-      imageSrc: "/Images/clean-room-double-gi.png",
+      imageSrc: "/Images/Dev_wokrs.jpg",
       additionalImages: [],
       price: 75000,
       rating: 4.8,
@@ -81,7 +81,7 @@ const getProductData = (id: string) => {
       description: "Stainless steel 304 single leaf clean room door.",
       longDescription:
         "Made from SS 304, this single leaf clean room door provides excellent durability, hygiene, and resistance to corrosion, making it ideal for sensitive environments.",
-      imageSrc: "/Images/clean-room-single-ss.png",
+      imageSrc: "/Images/Dev_wokrs2.jpg",
       additionalImages: [],
       price: 70000,
       rating: 4.9,
@@ -105,7 +105,7 @@ const getProductData = (id: string) => {
       description: "Stainless steel 304 double leaf clean room door.",
       longDescription:
         "This double leaf clean room door is constructed from SS 304, ensuring high durability, easy maintenance, and hygienic properties for controlled environments.",
-      imageSrc: "/Images/clean-room-double-ss.png",
+      imageSrc: "/Images/Dev_wokrs3.jpg",
       additionalImages: [],
       price: 95000,
       rating: 4.8,
@@ -129,7 +129,7 @@ const getProductData = (id: string) => {
     description: "Prepainted GI single leaf clean room door.",
     longDescription:
       "This single leaf clean room door features a prepainted GI sheet for enhanced durability and corrosion resistance. Ideal for clean rooms, it ensures a secure and efficient seal for controlled environments.",
-    imageSrc: "/Images/clean-room-single-prepainted.png",
+    imageSrc: "/Images/Dev_wokrs4.jpg",
     additionalImages: [],
     price: 60000,
     rating: 4.6,
@@ -186,7 +186,7 @@ const getProductData = (id: string) => {
       description: "60mm single leaf shutter fire-resistant door.",
       longDescription:
         "Engineered for advanced fire safety, this 60mm single leaf fire door provides enhanced fire resistance, suitable for high-risk environments.",
-      imageSrc: "/Images/fire-door-single-30mm.png",
+      imageSrc: "/Images/Dev_wokrs4.jpg",
       additionalImages: [],
       price: 50000,
       rating: 4.7,
@@ -211,7 +211,7 @@ const getProductData = (id: string) => {
       description: "30mm double leaf shutter fire-resistant door.",
       longDescription:
         "This 30mm double leaf fire door ensures maximum fire safety and compliance with industry standards. Its durable construction makes it suitable for industrial and commercial use.",
-      imageSrc: "/Images/fire-door-double-30mm.png",
+      imageSrc: "/Images/Dev_wokrs5.jpg",
       additionalImages: [],
       price: 70000,
       rating: 4.7,
@@ -236,7 +236,7 @@ const getProductData = (id: string) => {
       description: "60mm single leaf shutter fire-resistant door.",
       longDescription:
         "Engineered for advanced fire safety, this 60mm single leaf fire door provides enhanced fire resistance, suitable for high-risk environments.",
-      imageSrc: "/Images/fire-door-single-60mm.png",
+      imageSrc: "/Images/Dev_wokrs6.jpg",
       additionalImages: [],
       price: 60000,
       rating: 4.7,
@@ -261,7 +261,7 @@ const getProductData = (id: string) => {
       description: "60mm double leaf shutter fire-resistant door.",
       longDescription:
         "Designed for industrial and commercial fire safety, this 60mm double leaf fire door ensures superior fire protection and durability.",
-      imageSrc: "/Images/fire-door-double-60mm.png",
+      imageSrc: "/Images/Dev_wokrs7.jpg",
       additionalImages: [],
       price: 85000,
       rating: 4.8,
@@ -286,7 +286,7 @@ const getProductData = (id: string) => {
       description: "90mm single leaf shutter fire-resistant door.",
       longDescription:
         "This 90mm single leaf fire door is designed to withstand extended fire exposure, providing reliable safety for critical areas.",
-      imageSrc: "/Images/fire-door-single-90mm.png",
+      imageSrc: "/Images/Dev_wokrs4.jpg",
       additionalImages: [],
       price: 70000,
       rating: 4.8,
@@ -311,7 +311,7 @@ const getProductData = (id: string) => {
       description: "90mm double leaf shutter fire-resistant door.",
       longDescription:
         "This 90mm double leaf fire door is crafted to provide extended fire resistance for larger spaces, ensuring safety in high-risk areas.",
-      imageSrc: "/Images/fire-door-double-90mm.png",
+      imageSrc: "/Images/Dev_wokrs3.jpg",
       additionalImages: [],
       price: 90000,
       rating: 4.9,
@@ -336,7 +336,7 @@ const getProductData = (id: string) => {
       description: "120mm single leaf shutter fire-resistant door.",
       longDescription:
         "Crafted for maximum fire protection, this 120mm single leaf fire door provides top-tier fire resistance for critical infrastructure.",
-      imageSrc: "/Images/fire-door-single-120mm.png",
+      imageSrc: "/Images/Dev_wokrs2.jpg",
       additionalImages: [],
       price: 85000,
       rating: 4.9,
@@ -361,7 +361,7 @@ const getProductData = (id: string) => {
       description: "120mm double leaf shutter fire-resistant door.",
       longDescription:
         "This 120mm double leaf fire door is engineered for unparalleled fire safety, offering extended protection for large industrial or commercial spaces.",
-      imageSrc: "/Images/fire-door-double-120mm.png",
+      imageSrc: "/Images/Dev_wokrs.jpg",
       additionalImages: [],
       price: 100000,
       rating: 5.0,
@@ -387,7 +387,7 @@ const getProductData = (id: string) => {
         "Clean room panels available in PPGI / GI, PPGL / GI, SS / GI, SS / SS.",
       longDescription:
         "Modular type clean room panels are designed for maximum efficiency and hygiene. Available in PPGI / GI, PPGL / GI, SS / GI, and SS / SS, these panels provide excellent insulation and durability. They are suitable for a wide range of clean room applications.",
-      imageSrc: "/Images/sandwich-panel-modular.png",
+      imageSrc: "/Images/Dev_wokrs.jpg",
       additionalImages: [],
       price: 120000,
       rating: 4.8,
@@ -416,7 +416,7 @@ const getProductData = (id: string) => {
         "Tongue and groove type clean room panels in PPGI / GI, PPGL / GI, SS / GI, SS / SS.",
       longDescription:
         "Tongue and groove type clean room panels ensure a seamless fit for clean room environments. These panels, made from PPGI / GI, PPGL / GI, SS / GI, and SS / SS, are robust and easy to assemble, making them ideal for various controlled spaces.",
-      imageSrc: "/Images/sandwich-panel-tongue-groove.png",
+      imageSrc: "/Images/Dev_wokrs2.jpg",
       additionalImages: [],
       price: 125000,
       rating: 4.9,
@@ -760,7 +760,7 @@ const getProductData = (id: string) => {
         "Efficient HVAC ducting solutions for industrial facilities.",
       longDescription:
         "Industrial AC ducting is designed to optimize airflow and cooling in large-scale facilities. Built from durable materials, these ducts ensure long-lasting performance and energy efficiency.",
-      imageSrc: "/Images/hvac-industrial.png",
+      imageSrc: "/Images/AC_Duct2.jpg",
       additionalImages: [],
       price: 90000,
       rating: 4.8,
@@ -788,7 +788,7 @@ const getProductData = (id: string) => {
       description: "Professional-grade AC ducting for commercial buildings.",
       longDescription:
         "Commercial AC ducting provides reliable and efficient airflow solutions for office buildings, malls, and other commercial spaces.",
-      imageSrc: "/Images/hvac-commercial.png",
+      imageSrc: "/Images/AC_Duct3.jpg",
       additionalImages: [],
       price: 85000,
       rating: 4.7,
@@ -816,7 +816,7 @@ const getProductData = (id: string) => {
     description: "Advanced air cooling ducting solutions for cooling systems.",
     longDescription:
       "Air cooling ducting solutions provide energy-efficient and durable systems for residential and commercial cooling needs. These solutions ensure optimal airflow, minimal energy consumption, and a customizable design tailored to specific requirements.",
-    imageSrc: "/Images/hvac-air-cooling.png",
+    imageSrc: "/Images/AC-Duct.jpg",
     additionalImages: [],
     price: 95000,
     rating: 4.9,
@@ -844,7 +844,7 @@ const getProductData = (id: string) => {
     description: "Premium kitchen ventilation ducting for optimal airflow.",
     longDescription:
       "Kitchen ventilation ducting solutions provide high-efficiency airflow systems for residential and commercial kitchens. These solutions are designed to remove smoke, odors, and grease particles effectively while ensuring a clean and safe cooking environment.",
-    imageSrc: "/Images/hvac-kitchen-ventilation.png",
+    imageSrc: "/Images/AC_Kitchen.png",
     additionalImages: [],
     price: 80000,
     rating: 4.6,
