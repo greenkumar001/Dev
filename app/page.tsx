@@ -204,7 +204,7 @@ export default function Home() {
               <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-xl animate-float">
                 <div className="absolute inset-0 bg-gradient-to-r from-sky-blue-500/20 to-transparent z-10"></div>
                 <Image
-                  src="/Untitled design.png"
+                  src="/Images/Homeimg.jpg"
                   alt="Devrath Industries Security Door"
                   fill
                   className="object-cover"
