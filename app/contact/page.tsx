@@ -358,12 +358,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="relative h-[200px] w-full overflow-hidden rounded-lg mt-4">
-                  <Image
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop"
-                    alt="Headquarters"
-                    fill
-                    className="object-cover"
-                  />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.5006184345918!2d78.9758883988015!3d21.11246755275419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd495004465866d%3A0xfc933142fc70f990!2sDEVRATH%20INDUSTRIES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1747898436559!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>

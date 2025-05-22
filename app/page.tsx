@@ -70,7 +70,7 @@ export default function Home() {
       id: "clean-room-single-gi",
       title: "Single Leaf Shutter Clean Room Door: GI Powder Coated",
       description: "GI powder-coated single leaf clean room door.",
-      imageSrc: "/Images/clean-room-single-gi.png",
+      imageSrc: "/Images/product2.png",
       price: 55000,
       rating: 4.7,
       features: [
@@ -86,7 +86,7 @@ export default function Home() {
       id: "clean-room-double-prepainted",
       title: "Double Leaf Shutter Clean Room Door: Prepainted GI Sheet",
       description: "Prepainted GI double leaf clean room door.",
-      imageSrc: "/Images/clean-room-double-prepainted.png",
+      imageSrc: "/Images/product3.png",
       price: 85000,
       rating: 4.7,
       features: [
@@ -102,7 +102,7 @@ export default function Home() {
       id: "clean-room-double-prepainted",
       title: "Double Leaf Shutter Clean Room Door: Prepainted GI Sheet",
       description: "Prepainted GI double leaf clean room door.",
-      imageSrc: "/Images/clean-room-double-prepainted.png",
+      imageSrc: "/Images/product4.png",
       price: 85000,
       rating: 4.7,
       features: [
