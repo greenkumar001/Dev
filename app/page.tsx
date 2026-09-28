@@ -166,9 +166,8 @@ export default function Home() {
       {/* Hero Section */}
       <section
         ref={sectionRefs.hero}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-sky-blue-50 to-sky-blue-100 dark:from-dark-blue-900 dark:to-dark-blue-800 transition-opacity duration-1000 ${
-          isVisible.hero ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-sky-blue-50 to-sky-blue-100 dark:from-dark-blue-900 dark:to-dark-blue-800 transition-opacity duration-1000 ${isVisible.hero ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
@@ -222,9 +221,8 @@ export default function Home() {
       {/* About Section */}
       <section
         ref={sectionRefs.about}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${
-          isVisible.about ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${isVisible.about ? "opacity-100" : "opacity-0"
+          }`}
         id="about"
       >
         <div className="container px-4 md:px-6">
@@ -244,9 +242,8 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <ul className="grid gap-6 stagger-animation">
                 <li
-                  className={`flex items-start gap-4 transition-all duration-500 ${
-                    isVisible.about ? "animate-fade-in" : "opacity-0"
-                  }`}
+                  className={`flex items-start gap-4 transition-all duration-500 ${isVisible.about ? "animate-fade-in" : "opacity-0"
+                    }`}
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
                     <Factory className="h-5 w-5 text-primary" />
@@ -262,9 +259,8 @@ export default function Home() {
                   </div>
                 </li>
                 <li
-                  className={`flex items-start gap-4 transition-all duration-500 ${
-                    isVisible.about ? "animate-fade-in" : "opacity-0"
-                  }`}
+                  className={`flex items-start gap-4 transition-all duration-500 ${isVisible.about ? "animate-fade-in" : "opacity-0"
+                    }`}
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
                     <Shield className="h-5 w-5 text-primary" />
@@ -311,9 +307,8 @@ export default function Home() {
       {/* Products Section */}
       <section
         ref={sectionRefs.products}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-sky-blue-50 dark:bg-dark-blue-800 transition-opacity duration-1000 ${
-          isVisible.products ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-sky-blue-50 dark:bg-dark-blue-800 transition-opacity duration-1000 ${isVisible.products ? "opacity-100" : "opacity-0"
+          }`}
         id="products"
       >
         <div className="container px-4 md:px-6">
@@ -332,9 +327,8 @@ export default function Home() {
             {products.map((product, index) => (
               <div
                 key={product.id}
-                className={`transition-all duration-500 ${
-                  isVisible.products ? "animate-fade-in" : "opacity-0"
-                }`}
+                className={`transition-all duration-500 ${isVisible.products ? "animate-fade-in" : "opacity-0"
+                  }`}
               >
                 <ProductCard
                   id={product.id}
@@ -346,11 +340,11 @@ export default function Home() {
                   features={product.features}
                   category={
                     product.category as
-                      | "clean-room-door"
-                      | "fire-doors"
-                      | "clean-room-panels"
-                      | "accessories"
-                      | "hvac-ducting"
+                    | "clean-room-door"
+                    | "fire-doors"
+                    | "clean-room-panels"
+                    | "accessories"
+                    | "hvac-ducting"
                   }
                   badge={product.badge}
                   badgeColor={product.badgeColor}
@@ -374,9 +368,8 @@ export default function Home() {
 
       {/* Hardware Products Section */}
       <section
-        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${
-          isVisible.products ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${isVisible.products ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -431,9 +424,8 @@ export default function Home() {
       {/* Features Section */}
       <section
         ref={sectionRefs.features}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-sky-blue-50 dark:bg-dark-blue-800 transition-opacity duration-1000 ${
-          isVisible.features ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-sky-blue-50 dark:bg-dark-blue-800 transition-opacity duration-1000 ${isVisible.features ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -449,9 +441,8 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-primary/10">
                 <Shield className="h-8 w-8 text-primary" />
@@ -463,9 +454,8 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-red-500/20 to-red-500/10">
                 <svg
@@ -493,9 +483,8 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-green-500/20 to-green-500/10">
                 <svg
@@ -524,9 +513,8 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500/20 to-blue-500/10">
                 <svg
@@ -553,9 +541,8 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-purple-500/20 to-purple-500/10">
                 <svg
@@ -580,9 +567,8 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${
-                isVisible.features ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`flex flex-col items-center space-y-2 text-center transition-all duration-500 ${isVisible.features ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-amber-500/20 to-amber-500/10">
                 <svg
@@ -616,9 +602,8 @@ export default function Home() {
       {/* Manufacturing Capabilities Section */}
       <section
         ref={sectionRefs.manufacturing}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-gradient-professional-light dark:bg-dark-blue-900 transition-opacity duration-1000 ${
-          isVisible.manufacturing ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-gradient-professional-light dark:bg-dark-blue-900 transition-opacity duration-1000 ${isVisible.manufacturing ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -634,9 +619,8 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 stagger-animation">
             <div
-              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${
-                isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-primary/10"></div>
               <div className="relative z-10">
@@ -667,9 +651,8 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${
-                isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-primary/10"></div>
               <div className="relative z-10">
@@ -697,9 +680,8 @@ export default function Home() {
               </div>
             </div>
             <div
-              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${
-                isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`relative overflow-hidden rounded-lg bg-gradient-to-br from-primary/5 to-primary/10 p-6 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${isVisible.manufacturing ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-primary/10"></div>
               <div className="relative z-10">
@@ -730,11 +712,10 @@ export default function Home() {
           </div>
           <div className="mt-8 flex justify-center">
             <div
-              className={`relative w-full max-w-4xl overflow-hidden rounded-lg shadow-xl transition-all duration-1000 ${
-                isVisible.manufacturing
-                  ? "animate-scale-in"
-                  : "opacity-0 scale-95"
-              }`}
+              className={`relative w-full max-w-4xl overflow-hidden rounded-lg shadow-xl transition-all duration-1000 ${isVisible.manufacturing
+                ? "animate-scale-in"
+                : "opacity-0 scale-95"
+                }`}
             >
               <div className="aspect-[16/9] bg-gradient-to-r from-primary/20 via-primary/10 to-primary/5 flex items-center justify-center">
                 <div className="text-center p-8">
@@ -773,9 +754,8 @@ export default function Home() {
       {/* Contact Section */}
       <section
         ref={sectionRefs.contact}
-        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${
-          isVisible.contact ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-dark-blue-900 transition-opacity duration-1000 ${isVisible.contact ? "opacity-100" : "opacity-0"
+          }`}
         id="contact"
       >
         <div className="container px-4 md:px-6">
@@ -792,9 +772,8 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2">
             <div
-              className={`space-y-4 transition-all duration-500 ${
-                isVisible.contact ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`space-y-4 transition-all duration-500 ${isVisible.contact ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               <div className="flex items-start gap-4">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
@@ -811,7 +790,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold">Phone</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    +91 XXXX XXX XXX
+                    +91 8956111356
                   </p>
                 </div>
               </div>
@@ -820,15 +799,16 @@ export default function Home() {
                 <div>
                   <h3 className="font-bold">Email</h3>
                   <p className="text-gray-500 dark:text-gray-400">
+                    tusking.doors@rediffmail.com |
                     info@devrathindustries.com
+
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className={`space-y-4 transition-all duration-500 ${
-                isVisible.contact ? "animate-fade-in" : "opacity-0"
-              }`}
+              className={`space-y-4 transition-all duration-500 ${isVisible.contact ? "animate-fade-in" : "opacity-0"
+                }`}
             >
               {/* <div className="grid gap-4">
                 <div className="grid grid-cols-2 gap-4">

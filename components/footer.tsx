@@ -91,13 +91,13 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-sky-blue-400" />
               <span className="text-sm text-sky-blue-300">
-                +91 XXXX XXX XXX
+                +91 85307 58116
               </span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-sky-blue-400" />
               <span className="text-sm text-sky-blue-300">
-                info@devrathindustries.com
+                tusking.doors@rediffmail.com
               </span>
             </div>
           </div>
@@ -137,7 +137,15 @@ export default function Footer() {
         <div className="container flex flex-col gap-2 px-4 py-6 text-center md:px-6 md:flex-row md:justify-between">
           <p className="text-sm text-sky-blue-400">
             © {new Date().getFullYear()} Devrath Industries Pvt Ltd. All rights
-            reserved.
+            reserved. Designed and developed by{" "}
+            <Link
+              href="https://acustardtechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-blue-200 hover:text-white hover:underline underline-offset-4"
+            >
+              Acustard Technologies Pvt Ltd
+            </Link>
           </p>
           <nav className="flex flex-col gap-2 md:flex-row md:gap-4">
             <Link
