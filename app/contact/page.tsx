@@ -353,7 +353,7 @@ export default function ContactPage() {
                   <Phone className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="text-gray-500 dark:text-gray-400">
-                      +91 XXXX XXX XXX
+                      +91 85307 58116
                     </p>
                   </div>
                 </div>
@@ -405,8 +405,8 @@ export default function ContactPage() {
                       </AccordionTrigger>
                       <AccordionContent>
                         You can request a quote by filling out our contact form,
-                        sending an email to sales@devrathind.com, or calling our
-                        sales team at +91 XXXX XXX XXX. Please provide as much
+                        sending an email to tusking.doors@rediffmail.com, or calling our
+                        sales team at +91 85307 58116. Please provide as much
                         detail as possible about your requirements to help us
                         provide an accurate quote.
                       </AccordionContent>
